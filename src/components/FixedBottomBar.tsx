@@ -1,4 +1,5 @@
 import { Clock, Calendar } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const FixedBottomBar = () => {
   const scrollToRegistration = () => {
@@ -14,7 +15,7 @@ export const FixedBottomBar = () => {
   return (
     <div className="fixed-bottom-bar">
       <div className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           {/* Left side - Course info */}
           <div className="flex items-center space-x-3 flex-1">
             <div className="flex items-center space-x-2 text-yellow-400">
@@ -28,12 +29,13 @@ export const FixedBottomBar = () => {
           </div>
 
           {/* Right side - Register button */}
-          <button 
+          <Button
             onClick={scrollToRegistration}
-            className="bg-yellow-400 text-black px-4 md:px-6 py-2 md:py-3 rounded-lg font-bold hover:bg-yellow-300 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 text-sm md:text-base whitespace-nowrap ml-4"
+            className="btn-accent w-full md:w-auto font-bold text-sm md:text-base px-4 md:px-6 py-2 md:py-3 ml-0 md:ml-4"
+            aria-label="Đăng ký tham gia webinar"
           >
             ĐĂNG KÝ NGAY
-          </button>
+          </Button>
         </div>
       </div>
     </div>

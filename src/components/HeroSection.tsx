@@ -57,10 +57,11 @@ export const HeroSection = () => {
 
             {/* CTA Button */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
+              <Button
                 onClick={scrollToRegistration}
                 size="lg"
                 className="btn-accent text-lg px-8 py-4 animate-pulse-glow"
+                aria-label="Đăng ký tham gia miễn phí"
               >
                 🎯 Đăng ký tham gia miễn phí
               </Button>

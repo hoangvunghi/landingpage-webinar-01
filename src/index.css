@@ -157,6 +157,7 @@
     @apply shadow-[var(--shadow-button)] hover:shadow-xl;
     @apply transition-all duration-300 hover:scale-105;
     @apply border-2 border-transparent hover:border-accent;
+    @apply focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent;
   }
 
   .btn-accent {
@@ -164,6 +165,7 @@
     @apply px-8 py-4 rounded-lg font-semibold text-lg;
     @apply shadow-[var(--shadow-accent)] hover:shadow-xl;
     @apply transition-all duration-300 hover:scale-105;
+    @apply focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent;
   }
 
   .btn-outline {
@@ -171,6 +173,7 @@
     @apply px-6 py-3 rounded-lg font-medium;
     @apply hover:bg-primary hover:text-primary-foreground;
     @apply transition-all duration-300;
+    @apply focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary;
   }
 
   /* Section Backgrounds */
